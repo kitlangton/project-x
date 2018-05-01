@@ -1,0 +1,259 @@
+body {
+  font-family: "Source Sans Pro", "Trebuchet MS", "Lucida Grande",
+    "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  text-align: center;
+  color: #293c4b;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+img {
+  margin: 20px 0;
+  max-width: 200px;
+}
+
+.reminder-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-content: center;
+  align-items: center;
+  display: none;
+}
+
+.reminder-container.visible {
+  display: flex;
+}
+
+.reminder {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  border-radius: 3px;
+  min-width: 400px;
+  background-color: white;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reminder-text {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin: 10px;
+}
+
+.input-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.button {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.elm-datepicker--table {
+  margin: 0 auto;
+}
+
+.elm-datepicker--picker {
+  margin-top: 5px;
+}
+
+.elm-datepicker--container {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+.elm-datepicker--input {
+  box-sizing: border-box;
+  /* font-weight: bold; */
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.reminder textarea {
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.6);
+  resize: none;
+  height: 50px;
+  width: 100%;
+}
+
+.reminder-title {
+  padding: 10px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.elm-datepicker--container {
+  position: relative;
+}
+
+.elm-datepicker--input:focus {
+  outline: 0;
+}
+
+.elm-datepicker--picker {
+  position: absolute;
+  border: 1px solid #ccc;
+  z-index: 10;
+  width: 190px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+}
+
+.elm-datepicker--picker-header,
+.elm-datepicker--weekdays {
+  background: #f2f2f2;
+}
+
+.elm-datepicker--picker-header {
+  display: flex;
+  align-items: center;
+}
+
+.elm-datepicker--prev-container,
+.elm-datepicker--next-container {
+  flex: 0 1 auto;
+}
+
+.elm-datepicker--month-container {
+  flex: 1 1 auto;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.elm-datepicker--month,
+.elm-datepicker--year {
+  flex: 1 1 auto;
+  cursor: default;
+  text-align: center;
+}
+
+.elm-datepicker--year {
+  font-size: 0.6em;
+  font-weight: 700;
+}
+
+.elm-datepicker--prev,
+.elm-datepicker--next {
+  border: 6px solid transparent;
+  display: block;
+  width: 0;
+  height: 0;
+  padding: 0 0.2em;
+}
+
+.elm-datepicker--prev {
+  border-right-color: #aaa;
+}
+.elm-datepicker--prev:hover {
+  border-right-color: #bbb;
+}
+
+.elm-datepicker--next {
+  border-left-color: #aaa;
+}
+.elm-datepicker--next:hover {
+  border-left-color: #bbb;
+}
+
+.elm-datepicker--table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 0.8em;
+}
+.elm-datepicker--table td {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+
+.elm-datepicker--row {
+  border-top: 1px solid #f2f2f2;
+}
+
+.elm-datepicker--dow {
+  border-bottom: 1px solid #ccc;
+  cursor: default;
+}
+
+.elm-datepicker--day {
+  cursor: pointer;
+}
+.elm-datepicker--day:hover {
+  background: #f2f2f2;
+}
+
+.elm-datepicker--disabled {
+  cursor: default;
+  color: #ddd;
+}
+.elm-datepicker--disabled:hover {
+  background: inherit;
+}
+
+.elm-datepicker--picked {
+  color: white;
+  background: darkblue;
+}
+.elm-datepicker--picked:hover {
+  background: darkblue;
+}
+
+.elm-datepicker--today {
+  font-weight: bold;
+}
+
+.elm-datepicker--other-month {
+  color: #aaa;
+}
+.elm-datepicker--other-month.elm-datepicker--disabled {
+  color: #eee;
+}
+.elm-datepicker--other-month.elm-datepicker--picked {
+  color: white;
+}
